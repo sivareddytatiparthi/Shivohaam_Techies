@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>HtML & JAVASCRIPT</title>
-    <script src="index.js"></script>
+    <script src="./dom.js" defer></script>
+
     <!-- <script>
       function show() {
         // alert("Hello! I am an alert box!");
@@ -14,8 +15,8 @@
       }
     </script> -->
   </head>
-  <body style="background-color: lightblue">
-    <div style="background-color: white; padding: 20px">
+  <body id="body" style="background-color: lightblue">
+    <div id="div1" class="diva" style="background-color: white; padding: 20px">
       <h1>This is a Heading</h1>
 
       <p>
@@ -27,18 +28,18 @@
         paragraph.This is a paragraph.This is a paragraph.
       </p>
     </div>
-
-    <p>This is a paragraph.sdqsjbcqjosnck;qsncknsc;niqsc</p>
-    <h2>This is a sub heading</h2>
-    <h3>This is a sub sub heading</h3>
-    <h4>This is a smaller heading</h4>
-    <h5>This is an even smaller heading</h5>
-    <h6>This is the smallest heading</h6>
-
-    <button onclick="show()">Click Me!</button>
-    <br />
-    <a href="https://www.amazon.in/">Link</a>
-
+    <div id="div2" class="diva">
+      <p>This is a paragraph.sdqsjbcqjosnck;qsncknsc;niqsc</p>
+      <h2>This is a sub heading</h2>
+      <!-- <h2>This is a sub heading</h2> -->
+      <h3 id="h3ele">This is a sub sub heading h3 3h3h3h3b</h3>
+      <h4>This is a smaller heading</h4>
+      <h5>This is an even smaller heading</h5>
+      <h6>This is the smallest heading</h6>
+      <button id="btn">Click Me!</button>
+      <br />
+      <a href="https://www.amazon.in/">Link</a>
+    </div>
     <br />
 
     <img
@@ -49,7 +50,7 @@
     />
 
     <form>
-      <label for="fname">First name:</label><br />
+      <label name="dev" for="fname">First name:</label><br />
       <input type="text" id="fname" name="fname" /><br />
       <label for="lname">Last name:</label><br />
       <input type="text" id="lname" name="lname" /><br />
@@ -70,6 +71,9 @@
       p {
         font-family: verdana;
         font-size: 20px;
+      }
+      .diva {
+        background-color: orange;
       }
     </style>
   </body>

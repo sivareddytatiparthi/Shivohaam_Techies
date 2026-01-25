@@ -29,8 +29,9 @@ var city = "Indore"; // basic format
 // Hoisting = > it show the default behaviour of the variable before it's declartion and initialization
 
 console.log(job1); // for Var =>  undefined ->  due to the global variable
-console.log(job2); // for Let =>  ReferenceError: Cannot access 'job2' before initialization
-console.log(job3); // for Const =>  ReferenceError: Cannot access 'job3' before initialization
+//console.log(job2); // for Let =>  ReferenceError: Cannot access 'job2' before initialization
+//console.log(job3); // for Const =>  ReferenceError: Cannot access 'job3' before initialization
+// console.log(job4); // ReferenceError: job4 is not defined
 
 var job1; // can be declred without initialization
 
@@ -55,20 +56,6 @@ const job3 = "Software Engineer"; // can't be declred without initialization so,
 console.log(job3); // Software Engineer
 
 job3 = "Developer ";
-console.log(job3); // TypeError: Assignment to constant variable.
+// console.log(job3); // TypeError: Assignment to constant variable.
 
-var names = "shiva";
-function show() {
-  //   // alert("Hello! I am an alert box!");
-  //   // console.log("Hello! I am a message in console");
-  //   //  prompt("Hello! Please enter your name:");
-  //   // confirm("Hello! Are you sure you want to proceed?");
-  names = prompt("Enter your name:");
-  alert("Hello " + names + ", welcome to our website!");
-}
 
-// var names = "shiva";
-console.log(names);
-
-// names = 45;
-// console.log(names);
