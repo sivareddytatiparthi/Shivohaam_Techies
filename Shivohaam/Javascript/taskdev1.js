@@ -11,6 +11,12 @@ console.log(btn, "button");
 btn1.addEventListener("click", function show() {
   alert(" choose Here : B.com, BSc ,Bzc , Mlt ,");
 });
+let svs = document.getElementById("btn1"); 
+svs.style.backgroundColor= 'red',
+console.log(svs);
 
+let hn = document.getElementById("second"); 
+hn.style.color= 'white'
+console.log(hn);
 
 
