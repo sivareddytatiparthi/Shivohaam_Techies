@@ -1,0 +1,72 @@
+body{
+    margin: 0%;
+    padding: opx;
+   background-color: rgb(19, 236, 236);
+   background-image: url(https://media.istockphoto.com/id/485776945/photo/group-of-diverse-international-students-celebrating-graduation.jpg?s=612x612&w=0&k=20&c=ngmK2pZov4a5FZTCSaOWwX6pL2rL9fTsaSzwwY7QS6I=);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+   
+    
+}
+h1{
+    font-size: xx-large;
+    margin-left: 20px;
+    color:white;
+}
+#n-bar{
+   display: flex;
+   background-color: rgb(232, 70, 6);
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin-left: 1100px;
+    margin-top: 30px;
+    font-size: x-large;
+    font-weight: 30px;
+    color: aliceblue;
+}
+#second p{
+    margin-top: 290px;
+    margin-left: 100px;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 400px;
+    line-height: 1.30;
+    color: rgb(225, 228, 231);
+    
+}
+#thard p{
+    width: 550px;
+    line-height: 1.30;
+    margin-left: 50px;
+    font-size: 20px;
+    color:rgb(241, 237, 237);
+}
+#btn1{
+    margin-left: 40px;
+    padding: 16px 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: large;
+    
+    
+}
+#btnchoose{
+   
+    margin-left: 40px;
+    padding: 16px 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: large;
+}
+#btn1:hover{
+     background-color: rgb(75, 71, 71);
+}
+#btnchoose:hover{
+     background-color: rgb(75, 71, 71);
+}
