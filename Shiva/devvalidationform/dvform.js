@@ -1,23 +1,22 @@
 let btn = document.getElementById("btn1");
 console.log(btn, "button");
 
-btn.addEventListener("click", function show() {
-  alert("Enter Your  Full  Details ");
-
+btn.addEventListener("click", function () {
+  alert("Enter Your Full Details");
 });
+
 let btn1 = document.getElementById("btnchoose");
-console.log(btn, "button");
+console.log(btn1, "button");
 
-btn1.addEventListener("click", function show() {
-  alert(" choose Here : B.com, BSc ,Bzc , Mlt ,");
+btn1.addEventListener("click", function () {
+  alert("Choose Here : B.com, BSc, Bzc, Mlt");
 });
+
 let svs = document.getElementById("btn1"); 
-svs.style.backgroundColor= 'red',
-console.log(svs);
+svs.style.backgroundColor = 'red';
 
 let hn = document.getElementById("second"); 
-hn.style.color= 'white'
-console.log(hn);
+hn.style.color = 'white';
 
 
 
@@ -25,11 +24,12 @@ function showForm() {
     let form = document.getElementById("applyForm");
 
     if (form.style.display === "block") {
-        form.style.display = "none";   // close form
+        form.style.display = "none";
     } else {
-        form.style.display = "block";  // open form
+        form.style.display = "block";
     }
 }
+
 
 
 function validateForm() {
@@ -37,9 +37,11 @@ function validateForm() {
 
   let name = document.getElementById("name").value.trim();
 
+
   let email = document.getElementById("email").value.trim();
 
   let mobile = document.getElementById("mobile").value.trim();
+
 
 
   if (name === "") {
@@ -47,29 +49,30 @@ function validateForm() {
     return;
   }
 
-
   if (course === "") {
-    alert("course is not fill emty");
+    alert("Course should not be empty");
     return;
   }
 
 
+
   if (email === "") {
-    alert("please enter your maill includes @");
+    alert("Please enter email including @");
     return;
   }
 
 
 
   if (mobile === "") {
-    alert("please enter your maill includes @");
+    alert("Please enter mobile number");
     return;
-  } else if(mobile.length !==10) {
-    alert("please enter 10 ditits of mobile number");
+  } else if (mobile.length !== 10) {
+    alert("Please enter 10 digits mobile number");
     return;
   }
-  alert("form sudmited succes fully");
 
   
+
+  alert("Form submitted successfully ");
   document.getElementById("applyForm").style.display = "none";
 }
