@@ -74,5 +74,6 @@ function validateForm() {
   
 
   alert("Form submitted successfully ");
+  
   document.getElementById("applyForm").style.display = "none";
 }
