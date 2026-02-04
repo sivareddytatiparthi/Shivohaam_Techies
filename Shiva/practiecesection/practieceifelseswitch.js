@@ -95,10 +95,11 @@ console.log(results);
 
 //using spread operator 
 
-let arry1 = [1,2,4, 5, ];
-let arr2 =[0,...arry1,6,7,8];
+let arry1 = [90,100,110, ];
+let arr2 =[50,60,70,80,...arry1,120,130,140,];
+let array3 =[10,20,30,40,...arr2,150,160,]
 
-console.log(arr2);
+console.log(array3);
 
 
 // knowing the type of varible value using {typeof} method 
