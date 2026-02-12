@@ -58,15 +58,9 @@ fruits.forEach((fruitt, index) => {
 
 
 
-let ravi="level"
-let mani=""
-for (let i=ravi.length -1;i>=0;i--){
-    mani +=ravi[i];
-}
-if(ravi===mani){
-    console.log("poli succesfull");
-}
-else {
-    console.log("poli not successfull");
-}
+let ravi = "level"
+let siva=""
+for(let i =ravi.length -1;i>=0;i--){
 
+    siva +=ravi[i];
+}
