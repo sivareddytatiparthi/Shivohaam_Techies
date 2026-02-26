@@ -128,3 +128,36 @@ let upt11 = newArr.fill(50, 1, 6);
 // basic syntax:-
 // varType varName = arrayName.fill(value, startIndex, endIndex) start and end are optional
 console.log("array fill: ", newArr, upt11);
+
+// Higher order functions (map, filter, reduce) // mostly
+// when an function is taking another function as an argument so, that function is called Higher order function and the argument function is known as callback fun ction for that higher order function.
+
+let arr2 = [];
+for (let i = 0; i < newArr.length; i++) {
+  newArr[i] = newArr[i] * 2;
+  arr2.push(newArr[i]);
+}
+
+console.log("newArr without map: ", arr2);
+
+// map method:-
+let arrMap = newArr.map((num) => num * 2);
+console.log("higher order function Map: ", newArr, arrMap);
+// this function is higher order function.
+// return always an new array or create an new array without updating or affecting the original array.
+// this function or method is only for arrays data type.
+
+let arr3 = [];
+for (let i = 0; i < newArr.length; i++) {
+  if (newArr[i] < 10) {
+    arr3.push(newArr[i]);
+  }
+}
+
+console.log("newArr without filter: ", newArr, arr3);
+
+// filter method:-
+// this is a higher order function
+
+let arrFilter = newArr.filter((n) => n < 10);
+console.log("array with filter: ", newArr, arrFilter);
