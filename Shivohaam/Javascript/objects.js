@@ -30,7 +30,7 @@ const obj = {
     console.log("This is my function", this.name, "accessing name"); // this keyword is used to access the properties of object inside the function which is property of that object
   },
   arr: [1, 2, 3, 4], // object can also contain array as value
-  obj2: {
+  obj2: {  
     // object can also contain another object as value
     city: "Pune",
     country: "India",

@@ -82,10 +82,10 @@ console.log("array splice: ", arr, upt6);
 
 // creating new array methods:-
 
-let upt4 = arr.concat(...arr1, 45, 78); // Combines two or more arrays. This method returns a new array without modifying any existing arrays.
-console.log("array concate: ", arr, upt4);
+let upt44= arr.concat(...arr1, 45, 78); // Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+console.log("array concate: ", arr, upt44);
 
-let upt5 = arr.slice(1, 6);
+let upt55 = arr.slice(1, 6);
 /*
 basic syntax:- 
 varType varName = arrayName.slice(startIndex, endIndex)
@@ -97,7 +97,7 @@ The beginning index of the specified portion of the array. If start is undefined
 @param end
 The end index of the specified portion of the array. This is exclusive of the element at the index 'end'. If end is undefined, then the slice extends to the end of the array.
 */
-console.log("array slice: ", arr, upt5);
+console.log("array slice: ", arr, upt55);
 
 // find and checking arrays methods:-
 
@@ -190,16 +190,16 @@ let parodyucts = [
 let totalPrice = parodyucts.reduce((acc, curr) => acc + curr.price, 0);
 console.log("total price of products: ", totalPrice);
 
-let upt2 = arr.shift(); // Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
-console.log("array shift: ", arr, upt2);
+let upt22 = arr.shift(); // Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+console.log("array shift: ", arr, upt22);
 
-let upt3 = arr.unshift("shiva"); //Elements to insert at the start of the array. Inserts new elements at the start of an array, and returns the new length of the array.
-console.log("array unshift: ", arr, upt3);                
+let upt33 = arr.unshift("shiva"); //Elements to insert at the start of the array. Inserts new elements at the start of an array, and returns the new length of the array.
+console.log("array unshift: ", arr, upt33);                
 
 // let upt6 = arr.splice(2, 3);
 // console.log("array splice: ", arr, upt6);
 
-let upt6 = arr.splice(2, 3, "new1 , new2", "new3");
+let upt66 = arr.splice(2, 3, "new1 , new2", "new3");
 /*
 updating the original array , and return the updated values array for referece 
 basic syntax : - let varName = array.splice(startIndex , deleteCount , newItems) third param is optional
@@ -211,7 +211,7 @@ The number of elements to remove. If value of this argument is either a negative
 @param items — Elements to insert into the array in place of the deleted elements.
 @returns — An array containing the elements that were deleted.
 */
-console.log("array splice: ", arr, upt6);
+console.log("array splice: ", arr, upt66);
 
 // creating new array methods:-
 
@@ -234,63 +234,63 @@ console.log("array slice: ", arr, upt5);
 
 // find and checking arrays methods:-
 
-let newArr = [1, 4, 8, 6, 7, 45, 67, 89, 1, 0, 4, 1];
+let newArrr = [1, 4, 8, 6, 7, 45, 67, 89, 1, 0, 4, 1];
 
-let upt7 = newArr.find((num) => num < 4);                            
+let upt77 = newArr.find((num) => num < 4);                            
 // return the first occurance of matched arguments and if it's not matched so return undefined
 // take a function as a arguments
-console.log("array find: ", newArr, upt7);
+console.log("array find: ", newArrr, upt77);
 
-let upt8 = newArr.findIndex((num) => num < 2);
+let upt88 = newArr.findIndex((num) => num < 2);
 // return the first occurance index number of matched arguments and if it's not matched so return -1.
 // take a function as a arguments
-console.log("array findIndex: ", newArr, upt8);
+console.log("array findIndex: ", newArr, upt88);
 
-let upt9 = newArr.some((num) => num < 4);
+let upt99 = newArr.some((num) => num < 4);
 // return boolean value if it's matched the any one condition/ as passed in arguments so return true if no one if matched so, returns false
 // take a function as a arguments
-console.log("array some: ", newArr, upt9);
+console.log("array some: ", newArr, upt99);
 
-let upt10 = newArr.every((num) => num < 4);
+let upt101 = newArr.every((num) => num < 4);
 // return boolean value if it's matched the all elements values as passed in arguments condition so return true if not matched so, returns false
 // take a function as a arguments
-console.log("array every: ", newArr, upt10);
+console.log("array every: ", newArr, upt101);
 
-let upt11 = newArr.fill(50, 1, 6);
+let upt111 = newArr.fill(50, 1, 6);
 // return the updated filled values array and also update the original array
 // basic syntax:-
 // varType varName = arrayName.fill(value, startIndex, endIndex) start and end are options 
-console.log("array fill: ", newArr, upt11);                                                   
+console.log("array fill: ", newArr, upt111);                                                   
 
 // Higher order functions (map, filter, reduce) // mostly
 // when an function is taking another function as an argument so, that function is called Higher order function and the argument function is known as callback fun ction for that higher order function.
 
-let arr2 = [];
+let arr22 = [];
 for (let i = 0; i < newArr.length; i++) {
   newArr[i] = newArr[i] * 2;             
   arr2.push(newArr[i]);     
 }
 
-console.log("newArr without map: ", arr2);
+console.log("newArr without map: ", arr22);
 
 // map method:-
-let arrMap = newArr.map((num) => num * 2);
-console.log("higher order function Map: ", newArr, arrMap);
+let arrMapp = newArr.map((num) => num * 2);
+console.log("higher order function Map: ", newArr, arrMapp);
 // this function is higher order function.
 // return always an new array or create an new array without updating or affecting the original array.
 // this function or method is only for arrays data type.
 
-let arr3 = [];
+let arr33 = [];
 for (let i = 0; i < newArr.length; i++) {
   if (newArr[i] < 10) {
     arr3.push(newArr[i]);
   }
 }
 
-console.log("newArr without filter: ", newArr, arr3);
+console.log("newArr without filter: ", newArr, arr33);
 
 // filter method:-
 // this is a higher order function
 
-let arrFilter = newArr.filter((n) => n < 10);
-console.log("array with filter: ", newArr, arrFilter);    
+let arrFilte = newArr.filter((n) => n < 10);
+console.log("array with filter: ", newArr, arrFilte);    
