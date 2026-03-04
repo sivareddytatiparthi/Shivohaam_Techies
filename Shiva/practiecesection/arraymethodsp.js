@@ -87,7 +87,7 @@
   let name =["devanshish","mani","shiva","venky", "mahesh"];            
 
   let updatedNames= name.map((name) => name.toUpperCase()); 
-  console.log("names updated",name,updatedNames);
+  console.log("names updated",name,updatedNames);  
 
 
   //forth one 
@@ -115,7 +115,7 @@ console.log("only marks updated",students,marks);
 
 let users = [
   { name: "siva", age: 22 },
-  { name: "ram", age: 17 },
+  { name: "ram", age: 17 },    
   { name:"dev", age:16},
   { name: "mani" ,age: 25},
   { name:"venky",age:30}
