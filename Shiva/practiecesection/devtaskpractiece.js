@@ -64,3 +64,8 @@ for(let i =ravi.length -1;i>=0;i--){
 
     siva +=ravi[i];
 }
+
+
+let div= "madam" 
+
+ 

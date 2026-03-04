@@ -13,14 +13,14 @@ Math is a predefined class in JS and has multiple predefined methods on it.
 let valueOfE = Math.E;
 console.log("valueOfE: ", valueOfE);
 
-let valueOfPI = Math.PI;
+let valueOfPI = Math.PI;                                 
 console.log("valueOfPI: ", valueOfPI);
 
-let valueOfLog = Math.LN10;
-console.log("valueOfLog: ", valueOfLog);
+let valueOfLog = Math.LN10;                           
+console.log("valueOfLog: ", valueOfLog);                    
 
 let valueOfLog2E = Math.LOG2E;
-console.log("valueOfLog2E: ", valueOfLog2E);
+console.log("valueOfLog2E: ", valueOfLog2E);       
 
 console.log("Math.LN2: ", Math.LN2);
 console.log("Math.LOG10E: ", Math.LOG10E);

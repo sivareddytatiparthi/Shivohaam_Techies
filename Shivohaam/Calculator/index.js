@@ -2,19 +2,19 @@
 // Demonstrates all JavaScript concepts: variables, scopes, string methods, loops, and arithmetic operations
 
 // Global variables for calculator state
-let currentInput = "0";
+let currentInput = "0";                                        
 let previousInput = "";
 let currentOperator = null;
 let shouldResetInput = false;
-let calculationHistory = [];
+let calculationHistory = [];   
 
-// Constants for calculator configuration
+// Constants for calculator configuration    
 const MAX_DISPLAY_LENGTH = 15;
 const HISTORY_LIMIT = 50;
 
 // DOM element references - using const for immutable references
-const dialElement = document.getElementById("dial");
-const historyElement = document.getElementById("history");
+const dialElement = document.getElementById("dial");             
+const historyElement = document.getElementById("history");       
 const historyListElement = document.getElementById("historyList");
 
 /**
@@ -49,13 +49,13 @@ function cleanAndValidateInput(input) {
 /**
  * Update the display with current input and history
  */
-function updateDisplay() {
+function updateDisplay() {   
   // Clean and format the current input
   const displayValue = cleanAndValidateInput(currentInput);
 
   // Format large numbers with commas
   let formattedValue = displayValue;
-  if (!displayValue.includes(".") && displayValue.length > 3) {
+  if (!displayValue.includes(".") && displayValue.length > 3) {   
     formattedValue = parseFloat(displayValue).toLocaleString();
   }
 
@@ -84,7 +84,7 @@ function getOperatorSymbol(operator) {
     "%": "%",
     "^": "^",
   };
-  return operatorSymbols[operator] || operator;
+  return operatorSymbols[operator] || operator;    
 }
 
 /**
@@ -109,7 +109,7 @@ function appendNumber(number) {
   if (newInput === "0") {
     newInput = number;
   } else {
-    newInput += number;
+    newInput += number;      
   }
 
   currentInput = cleanAndValidateInput(newInput);
@@ -128,7 +128,7 @@ function appendDecimal() {
   // Check if decimal already exists using string method
   if (!currentInput.includes(".")) {
     currentInput += ".";
-    updateDisplay();
+    updateDisplay( );    
   }
 }
 
@@ -139,18 +139,18 @@ function appendDecimal() {
 function appendOperator(operator) {
   // Handle percentage as immediate calculation
   if (operator === "%") {
-    calculatePercentage();
+    calculatePercentage();     
     return;
   }
 
-  // If we have a pending calculation, perform it first
-  if (previousInput && currentOperator && !shouldResetInput) {
-    calculate();
+  // If we have a pending calculation, perform it first    
+  if (previousInput && currentOperator && !shouldResetInput) {                 
+    calculate();                                    
   }
 
   previousInput = currentInput;
   currentOperator = operator;
-  shouldResetInput = true;
+  shouldResetInput = true;         
   updateDisplay();
 }
 
@@ -355,7 +355,7 @@ function clearAll() {
 /**
  * Backspace function - remove last character
  */
-function backspace() {
+function backspace() {  
   if (shouldResetInput || currentInput === "0") {
     return;
   }
@@ -485,23 +485,23 @@ document.addEventListener("keydown", function (event) {
     calculate();
   } else if (key === "Escape" || key === "c" || key === "C") {
     clearAll();
-  } else if (key === "Backspace") {
+  } else if (key === "Backspace") {       
     backspace();
   }
 });
 
 /**
- * Initialize calculator on page load
+ * Initialize calculator on page load   
  */
-function initializeCalculator() {
-  // Set initial state
+function initializeCalculator() {            
+  // Set initial state    
   clearAll();
   updateHistoryDisplay();
 
   // Demonstrate variable scopes
-  demonstrateVariableScopes();
+  demonstrateVariableScopes();          
 
-  console.log("Calculator initialized successfully!");
+  console.log("Calculator initialized successfully!");      
 }
 
 /**

@@ -1,15 +1,21 @@
 let  display = document.getElementById("display");
+let siva = document.getElementById("siva");
 
 function addToDisplay(value) {
   display.value += value;
+  siva.value+= value;
 }
 
 function clearDisplay() {  
-  display.value = "";        
+  display.value = ""; 
+  
+  siva.value = "";
+  
 }
 
 function deleteLast() {
   display.value = display.value.slice(0, -1);
+  siva.value=display.value.slice(0,-1);
 }
 
 
