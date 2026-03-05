@@ -1,19 +1,19 @@
 
  const obj={
-    name:"devrathod",
+    name:"devrathod",        
     age:28,
 
     myfun:function(){  
-        console.log("my function:",this.name,"access name using this keyword");
+        console.log("my function:",this.name,"access name using this keyword");    
     },
     arr:[2,3,4],
 
     obj2:{
-        city:"panjab",
-        country:"india",
+        city:"panjab",   
+        country:"india",  
     },
 
-    33:"number key ",
+    33:"number key ",          
 
  };
 
@@ -37,7 +37,7 @@
 
  const obj1={
     name:"shiva",
-    age:22,
+    age:22,          //siva reddy tatiparthi@gmail.come          
  };
 
  // 2.secound way using constructrs 
