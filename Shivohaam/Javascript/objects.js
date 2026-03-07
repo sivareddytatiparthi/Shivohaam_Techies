@@ -97,12 +97,12 @@ obj["age"] = 26; // Modifying property using bracket notation
 obj.myfun(); // calling function which is property of object
 console.log(obj.myfun); // this will return the function definition because myfun is a property of object which is storing function as value
 
-console.log("Original obj:", obj);
+console.log("Original obj:", obj);  
 console.log("refered obj3:", obj3); // share the same reference so, both will reflect the change due to same memory reference
 
 // Object Iteration:
 
-for (let key in obj) {
+for (let key in obj) {  
   console.log("For loop Iteration", key, ":", obj[key]); // iterating over object properties using for...in loop
 }
 
@@ -159,7 +159,7 @@ const obj8 = {
     console.log("Hello, my name is " + this.name); // method to greet using the name property of the object
   },
 };
-obj8.greet(); // calling the greet method of obj8
+obj8.greet(); // calling the greet method of obj8             
 
 // Object.freeze(obj8); // freezing the object to prevent any modifications to its properties
 obj8.name = "Shivohaam";

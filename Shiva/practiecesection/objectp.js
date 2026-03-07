@@ -91,3 +91,44 @@
 
        console.log(obj2);
        console.log(obj3);    
+
+
+
+       let objs ={
+          name: "siva",
+          age:22,
+          job:"it Employee",
+          salasry:200000,
+       };
+       //for(let key in objs){
+       //console.log(  key, ":"  , objs[key]);
+       //}
+       console.log("keys",Object.keys(objs));   //here we only geting the keys
+     console.log("entrie",Object.entries(objs));
+
+      // Object.keys(objs).//
+       //forEach((key) => {    
+  //console.log("Object.keys Iteration", key, ":", objs[key]); // iterating over object properties using Object.keys() method
+//});
+     
+
+//Object.values(objs).forEach((value) => {
+  //console.log("Object.values Iteration", value); // iterating over object values using Object.values() method
+//});
+
+
+Object.entries(objs).forEach(([key, value]) => {
+  console.log("Object.entries Iteration", key, ":", value); // iterating over object entries using Object.entries() method
+});
+
+
+//Object.entries(objs).forEach((entry) => {
+  //const [key, value] = entry;
+  //console.log("Object.entries Iteration with destructuring", key, ":", value); // iterating over object entries using Object.entries() method with destructuring
+//});
+
+
+Object.seal(objs);
+objs.name="sivareddy tatipartio"
+objs.gender="male"  
+console.log(objs);
