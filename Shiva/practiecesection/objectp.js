@@ -132,3 +132,17 @@ Object.seal(objs);
 objs.name="sivareddy tatipartio"
 objs.gender="male"  
 console.log(objs);
+
+
+
+let a = 10;
+let b = a;
+
+console.log(a);
+console.log(b);
+a=20;
+console.log(a);
+console.log(b);
+
+let arr1 = [1, 2, 3, 4];
+let arr2 = arr1.slice(); // 

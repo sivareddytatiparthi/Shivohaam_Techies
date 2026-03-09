@@ -145,7 +145,7 @@ const obj6 = { ...obj }; // creating a shallow copy of obj using spread operator
 console.log("obj6 (shallow copy of obj):", obj6);
 
 const obj7 = JSON.parse(JSON.stringify(obj)); // creating a deep copy of obj using JSON methods
-console.log("obj7 (deep copy of obj):", obj7);
+console.log("obj7 (deep copy of obj):", obj7);             
 
 //Object Methods
 const obj8 = {

@@ -23,10 +23,10 @@ and function calls, while the heap is used for storing objects and arrays.
 let a = 10; // a is stored in stack memory and it holds the value 10 a -> 10 (value copy)
 let b = a; // b is stored in stack memory and it holds the value of a which is 10 b -> 10 (value copy)
 console.log("a: ", a); // 10
-console.log("b: ", b);
+console.log("b: ", b);    
 a = 20;
 console.log("a: ", a); // 20
-console.log("b: ", b); // 10
+console.log("b: ", b); // 10       
 
 // Now let's see the reference copy with objects
 
@@ -78,7 +78,7 @@ let arr3 = arr1.concat(); // arr3 is shallow copy of arr1
 
 obj4.name = "Shiva Reddy";
 console.log("obj1: ", obj1);
-console.log("obj4: ", obj4); // { name: 'Shiva Reddy', age: 25 }
+console.log("obj4: ", obj4); // { name: 'Shiva Reddy', age: 25 }                       
 
 obj3.name = "Shiva Kumar";
 console.log("obj1: ", obj1); // { name: 'Shivohaam', age: 25 } because obj3 is shallow copy of obj1 so, if we change any value in obj3 then it will also reflect in obj1 because both are reference of same object.
@@ -106,23 +106,23 @@ console.log("obj1: ", obj1); // { name: 'Shivohaam', age: 25, address: { city: '
 console.log("obj5: ", obj5); // { name: 'Shiva Reddy Kumar', age: 25, address: { city: 'Mumbai', country: 'India' } }
 
 // 2. Using structuredClone() method
-let obj6 = structuredClone(obj1); // obj6 is deep copy of obj1
+let obj6 = structuredClone(obj1); // obj6 is deep copy of obj1      
 
 obj6.name = "Shiva Reddy Kumar";
-console.log("obj1: ", obj1);
+console.log("obj1: ", obj1);             
 
 console.log("obj6: ", obj6); // { name: 'Shiva Reddy Kumar', age: 25, address: { city: 'Mumbai', country: 'India' } }
 
 // 3. Using recursive function to create deep copy of object
 function deepCopy(obj) {
-  if (obj === null || typeof obj !== "object") {
+  if (obj === null || typeof obj !== "object") {             
     return obj; // return the value if obj is not an object
   }
   let copy = Array.isArray(obj) ? [] : {}; // create a new object or array based on the type of obj
   for (let key in obj) {
     if (obj.hasOwnProperty(key)) {
       copy[key] = deepCopy(obj[key]); // recursively copy the properties of obj
-    }
+    }            
   }
   return copy; // return the deep copy of obj
 }

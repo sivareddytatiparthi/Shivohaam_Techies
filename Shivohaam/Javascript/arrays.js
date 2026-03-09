@@ -66,7 +66,7 @@ console.log("array unshift: ", arr, upt3);
 // let upt6 = arr.splice(2, 3);
 // console.log("array splice: ", arr, upt6);
 
-let upt6 = arr.splice(2, 3, "new1 , new2", "new3");
+let upt6 = arr.splice(2, 3, "new1 , new2", "new3");      
 /*
 updating the original array , and return the updated values array for referece 
 basic syntax : - let varName = array.splice(startIndex , deleteCount , newItems) third param is optional
@@ -103,11 +103,11 @@ console.log("array slice: ", arr, upt55);
 
 let newArr = [1, 4, 8, 6, 7, 45, 67, 89, 1, 0, 4, 1];
 
-let upt7 = newArr.find((num) => num < 4);
+let upt7 = newArr.find((num) => num < 4);                           
 // return the first occurance of matched arguments and if it's not matched so return undefined
 // take a function as a arguments
 console.log("array find: ", newArr, upt7);
-
+                                          
 let upt8 = newArr.findIndex((num) => num < 2);
 // return the first occurance index number of matched arguments and if it's not matched so return -1.
 // take a function as a arguments
