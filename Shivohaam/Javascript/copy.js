@@ -24,7 +24,7 @@ let a = 10; // a is stored in stack memory and it holds the value 10 a -> 10 (va
 let b = a; // b is stored in stack memory and it holds the value of a which is 10 b -> 10 (value copy)
 console.log("a: ", a); // 10
 console.log("b: ", b);    
-a = 20;
+a = 20;       
 console.log("a: ", a); // 20
 console.log("b: ", b); // 10       
 
@@ -32,7 +32,7 @@ console.log("b: ", b); // 10
 
 let obj1 = {
   name: "Shiva",
-  age: 25,
+  age: 25,            
   address: {
     city: "Pune",
     country: "India",
