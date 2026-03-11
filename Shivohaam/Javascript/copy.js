@@ -23,25 +23,25 @@ and function calls, while the heap is used for storing objects and arrays.
 let a = 10; // a is stored in stack memory and it holds the value 10 a -> 10 (value copy)
 let b = a; // b is stored in stack memory and it holds the value of a which is 10 b -> 10 (value copy)
 console.log("a: ", a); // 10
-console.log("b: ", b);    
+console.log("b: ", b);  
 a = 20;       
-console.log("a: ", a); // 20
-console.log("b: ", b); // 10       
+console.log("a: ", a); // 20                         
+console.log("b: ", b); // 10                  
 
 // Now let's see the reference copy with objects
 
 let obj1 = {
-  name: "Shiva",
+  name: "Shiva",  
   age: 25,            
-  address: {
+  address: {   
     city: "Pune",
     country: "India",
-  },
+   },                
 };
 
 let obj2 = obj1; // obj2 is reference of obj1 so, if we change any value in obj2 then it will also reflect in obj1 because both are reference of same object
 console.log("obj1: ", obj1);
-console.log("obj2: ", obj2);
+console.log ("obj1: ",obj2);
 
 obj2.name = "Shivohaam";
 console.log("obj1: ", obj1); // { name: 'Shivohaam', age: 25 }
@@ -64,23 +64,23 @@ console.log("obj2: ", obj2); // { name: 'Shivohaam', age: 25 }
 
 // => Ways to create shallow copy of object in JS:-
 // 1. Using Object.assign() method
-let obj3 = Object.assign({}, obj1);
+let obj3 = Object.assign({}, obj1);  //       
 
 // 2. Using spread operator
 let obj4 = { ...obj1 };
 
-// 3. Using slice() method for array
+// 3. Using slice() method for array                   
 let arr1 = [1, 2, 3, 4];
-let arr2 = arr1.slice(); // arr2 is shallow copy of arr1
+let arr2 = arr1.slice(); // arr2 is shallow copy of arr1    
 
 // 4. Using concat() method for array
-let arr3 = arr1.concat(); // arr3 is shallow copy of arr1
+let arr3 = arr1.concat(); // arr3 is shallow copy of arr1       
 
-obj4.name = "Shiva Reddy";
+obj4.name = "Shiva Reddy";   // we assinded a new value of it                 
 console.log("obj1: ", obj1);
 console.log("obj4: ", obj4); // { name: 'Shiva Reddy', age: 25 }                       
 
-obj3.name = "Shiva Kumar";
+obj3.name = "Shiva Kumar";     
 console.log("obj1: ", obj1); // { name: 'Shivohaam', age: 25 } because obj3 is shallow copy of obj1 so, if we change any value in obj3 then it will also reflect in obj1 because both are reference of same object.
 console.log("obj3: ", obj3); // { name: 'Shiva Kumar', age: 25 }
 obj3.address.city = "Mumbai"; // because address is also an object and it is reference type so, if we change any value in address then it will also reflect in obj1 because both are reference of same object.
@@ -100,8 +100,10 @@ console.log("obj3: ", obj3); // { name: 'Shiva Kumar', age: 25, address: { city:
 // => Ways to create deep copy of object in JS:-
 // 1. Using JSON.parse() and JSON.stringify() method
 let obj5 = JSON.parse(JSON.stringify(obj1)); // obj5 is deep copy of obj1
+     
 
-obj5.name = "Shiva Reddy Kumar";
+
+obj5.name = "Shiva Reddy Kumar";  // 
 console.log("obj1: ", obj1); // { name: 'Shivohaam', age: 25, address: { city: 'Mumbai', country: 'India' } }
 console.log("obj5: ", obj5); // { name: 'Shiva Reddy Kumar', age: 25, address: { city: 'Mumbai', country: 'India' } }
 

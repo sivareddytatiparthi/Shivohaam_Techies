@@ -1,24 +1,24 @@
-/*
+      /*
 
 Array in JS =>
     An Array is an special type of object used to store multiple values in a single variable.
 
-Basic Syntax:-
+Basic Syntax:-    
 
--> By direct varibale(mostly used)
+-> By direct varibale(mostly used) 
  varType varName assign Operator and values in sqare bracket []
  let array = [1,2,"dev", "shiva", 6, 5] 
 
 -> Using Constructor
-varType varName assign Operator new keyWord Array(values)
+varType varName assign Operator new keyWord Array(values)                
 let array = new Array(1,2,"dev", "shiva", 6, 5)
 
 Characteristics of Array:-
 
--> Stored multile values 
--> can store different data types
+-> Stored multile values         
+-> can store different data types  
 -> dynamic in nature (dynamic size)      
--> indexed (starts from 0)
+-> indexed (starts from 0)                
 -> Ordered collection/list
 -> Stored in Heap memory    
 -> refernce type (non primitives data type) 
